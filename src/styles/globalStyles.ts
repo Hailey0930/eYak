@@ -16,6 +16,7 @@ export const GlobalStyles = createGlobalStyle`
         --white-color-600: #b5b5b5;
 
 		--primary-blue-color: #343496;
+		--secondary-blue-color: #010163;
 	}
 
 	@font-face {
