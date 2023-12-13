@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { breakPoints } from "./breakPoints";
+import { FaImage } from "react-icons/fa6";
 
 export const GridContainer = styled.div`
   display: flex;
@@ -7,9 +8,11 @@ export const GridContainer = styled.div`
   align-items: center;
   width: 100%;
   height: fit-content;
+  margin-bottom: 30px;
   padding: 10px 0;
   border-radius: 10px;
   border: 1px solid var(--white-color-400);
+  break-inside: avoid;
 `;
 
 export const PhotoContainer = styled.div`
@@ -17,9 +20,13 @@ export const PhotoContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 30%;
-  height: 100px;
+  height: 80px;
   margin-bottom: 10px;
-  border: 1px solid red;
+`;
+
+export const ImageIcon = styled(FaImage)`
+  width: 40%;
+  height: 40%;
 `;
 
 export const InfoContainer = styled.div`
@@ -41,9 +48,11 @@ export const InfoContainer = styled.div`
 export const MedicineName = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 80%;
+  padding: 0 10%;
   font-size: var(--font-size-200);
   font-weight: 800;
+  text-align: center;
   color: var(--secondary-blue-color);
   margin-bottom: 20px;
 `;
