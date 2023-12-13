@@ -59,23 +59,19 @@ export const SearchIcon = styled(LuSearch)`
 `;
 
 export const ListContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  column-count: 4;
   column-gap: 30px;
-  row-gap: 20px;
   width: 100%;
 
   @media screen and (max-width: ${breakPoints.largeMedium}px) {
-    grid-template-columns: repeat(3, 1fr);
+    column-count: 3;
   }
 
   @media screen and (max-width: ${breakPoints.medium}px) {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
+    column-count: 2;
   }
 
   @media screen and (max-width: ${breakPoints.small}px) {
-    grid-template-columns: repeat(1, 1fr);
+    column-count: 1;
   }
 `;
