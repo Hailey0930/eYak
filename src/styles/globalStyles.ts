@@ -1,6 +1,20 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+	@font-face {
+		font-family: 'Pretendard';
+		src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'KCC-Ganpan';
+		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+		font-weight: normal;
+		font-style: normal;
+	}
+
     html, body, div, span, applet, object, iframe,
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 	a, abbr, acronym, address, big, cite, code,
@@ -45,6 +59,7 @@ export const GlobalStyles = createGlobalStyle`
 		border-spacing: 0;
 	}
 	html {
+		font-family: "Pretendard";
         font-size: 62.5%;
 		overflow-x: hidden;
 	}
