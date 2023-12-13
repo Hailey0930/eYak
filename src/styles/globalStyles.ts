@@ -1,6 +1,23 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+	:root {
+		--font-size-100 : 2.5rem;
+		--font-size-200 : 2.3rem;
+		--font-size-300 : 2rem;
+		--font-size-400 : 1.8rem;
+		--font-size-500 : 1.6rem;
+
+		--white-color-100: #fff;
+        --white-color-200: #f4f4f4;
+        --white-color-300: #f7f7f7;
+        --white-color-400: #ddd;
+        --white-color-500: #C0C0C0;
+        --white-color-600: #b5b5b5;
+
+		--primary-blue-color: #343496;
+	}
+
 	@font-face {
 		font-family: 'Pretendard';
 		src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -70,5 +87,9 @@ export const GlobalStyles = createGlobalStyle`
 	a {
 		text-decoration: none;
 		color: inherit;
+	}
+	button {
+		background: transparent;
+		border: none;
 	}
 `;
