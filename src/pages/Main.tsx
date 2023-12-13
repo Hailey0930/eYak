@@ -1,7 +1,15 @@
+import { useState } from "react";
+import { getDrugList } from "../api/getDrugList";
 import Grid from "../components/Grid";
 import * as S from "../styles/Main.styles";
 
 export default function Main() {
+  const [search] = useState("");
+  const [page] = useState(1);
+  const [, setTotal] = useState(0);
+
+  const { data } = getDrugList(search, page, setTotal);
+
   return (
     <S.Container>
       <S.SearchContainer>
@@ -10,7 +18,7 @@ export default function Main() {
       </S.SearchContainer>
 
       <S.ListContainer>
-        <Grid />
+        {data?.body.items.map((item) => <Grid key={item.bizrno} data={item} />)}
       </S.ListContainer>
     </S.Container>
   );
