@@ -62,6 +62,7 @@ export const ListContainer = styled.div`
   column-count: 4;
   column-gap: 30px;
   width: 100%;
+  min-height: 500px;
 
   @media screen and (max-width: ${breakPoints.largeMedium}px) {
     column-count: 3;
