@@ -19,7 +19,7 @@ const Spinner = styled.div`
   align-items: center;
 
   width: 25%;
-  height: 25%;
+  height: 40%;
   z-index: 10;
 `;
 
