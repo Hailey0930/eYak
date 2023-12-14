@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/eYak/static/js/main.0367feeb.js",
+    "main.js": "/eYak/static/js/main.3004a75c.js",
     "static/media/spinner.gif": "/eYak/static/media/spinner.6fabc374b0b6c0b01d88.gif",
     "index.html": "/eYak/index.html",
-    "main.0367feeb.js.map": "/eYak/static/js/main.0367feeb.js.map"
+    "main.3004a75c.js.map": "/eYak/static/js/main.3004a75c.js.map"
   },
   "entrypoints": [
-    "static/js/main.0367feeb.js"
+    "static/js/main.3004a75c.js"
   ]
 }
