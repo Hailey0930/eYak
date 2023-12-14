@@ -1,14 +1,20 @@
-import { createBrowserRouter } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "../pages/Main";
 import Layout from "../components/layout";
 
-export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <Layout>
-        <Main />
-      </Layout>
-    ),
-  },
-]);
+export const AppRouter = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <Main />
+            </Layout>
+          }
+        />
+      </Routes>
+    </Router>
+  );
+};
