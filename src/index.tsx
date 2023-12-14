@@ -1,7 +1,6 @@
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./routes/router";
+import { AppRouter } from "./routes/router";
 import { GlobalStyles } from "./styles/globalStyles";
 
 const queryClient = new QueryClient({
@@ -19,6 +18,6 @@ const root = ReactDOM.createRoot(
 root.render(
   <QueryClientProvider client={queryClient}>
     <GlobalStyles />
-    <RouterProvider router={router} />
+    <AppRouter />
   </QueryClientProvider>,
 );
