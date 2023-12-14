@@ -27,7 +27,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://Hailey0930.github.io/eYak",
+  "homepage": "https://hailey0930.github.io/eYak/",
   "eslintConfig": {
     "extends": [
       "react-app",
